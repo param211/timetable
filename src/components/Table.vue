@@ -209,7 +209,7 @@ export default {
           {time: "9", exists: false, name: "", code: "", teacher: "", room: ""},
           {time: "10", exists: false, name: "", code: "", teacher: "", room: ""},
           {time: "11", exists: true, name: "A.I.", code: "ITD05", teacher: "Apoorvi Sood", room: "Room:VR75"},
-          {time: "12", exists: true, name: "Org. Dev.", code: "EO013", teacher: "Duru Arun Kumar", room: "NB(S-01)"},
+          {time: "12", exists: false, name: "", code: "", teacher: "", room: ""},
           {time: "13", exists: false, name: "", code: "", teacher: "", room: ""},
           {time: "14", exists: false, name: "", code: "", teacher: "", room: ""},
           {time: "15", exists: false, name: "", code: "", teacher: "", room: ""},
