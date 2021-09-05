@@ -1,8 +1,8 @@
 <template>
 <div class="cell">
-    <!-- <div class="time">
+    <div class="time">
         {{ time }} - {{ Number(time) + 1 }}
-    </div> -->
+    </div>
     <div class="name">
         <center> {{ code }} {{ name }} </center>
     </div>
@@ -34,10 +34,16 @@ export default {
 
 <style scoped>
 .cell {
-  height: 1rem;
-  width: 10rem;
-  padding: 2px;
-  border: 0.21rem solid rgb(95, 95, 95);
+  
+  height: 50px;
+  width: 150px;
+  padding: 1px;
+  border: 0.21px solid rgb(95, 95, 95);
   margin: 0;
+  
+}
+
+.time {
+  color: rgb(145, 145, 145);
 }
 </style>

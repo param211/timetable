@@ -1,123 +1,5 @@
 <template>
-<!-- <div>
-<div class="day Monday">
-  <div class="cell 8">
-  </div>
-  <div class="cell 9">
-  </div>
-  <div class="cell 10">
-  </div>
-  <div class="cell 11">
-  </div>
-  <div class="cell 12">
-  </div>
-  <div class="cell 13">
-  </div>
-  <div class="cell 14">
-  </div>
-  <div class="cell 15">
-  </div>
-  <div class="cell 16">
-  </div>
-  <div class="cell 17">
-  </div>
-</div>
 
-<div class="day Tuesday">
-  <div class="cell 8">
-  </div>
-  <div class="cell 9">
-  </div>
-  <div class="cell 10">
-  </div>
-  <div class="cell 11">
-  </div>
-  <div class="cell 12">
-  </div>
-  <div class="cell 13">
-  </div>
-  <div class="cell 14">
-  </div>
-  <div class="cell 15">
-  </div>
-  <div class="cell 16">
-  </div>
-  <div class="cell 17">
-  </div>
-</div>
-
-<div class="day Wednesday">
-  <div class="cell 8">
-  </div>
-  <div class="cell 9">
-  </div>
-  <div class="cell 10">
-  </div>
-  <div class="cell 11">
-  </div>
-  <div class="cell 12">
-  </div>
-  <div class="cell 13">
-  </div>
-  <div class="cell 14">
-  </div>
-  <div class="cell 15">
-  </div>
-  <div class="cell 16">
-  </div>
-  <div class="cell 17">
-  </div>
-
-</div>
-
-<div class="day Thursday">
-  <div class="cell 8">
-  </div>
-  <div class="cell 9">
-  </div>
-  <div class="cell 10">
-  </div>
-  <div class="cell 11">
-  </div>
-  <div class="cell 12">
-  </div>
-  <div class="cell 13">
-  </div>
-  <div class="cell 14">
-  </div>
-  <div class="cell 15">
-  </div>
-  <div class="cell 16">
-  </div>
-  <div class="cell 17">
-  </div>
-
-</div>
-
-<div class="day Friday">
-  <div class="cell 8">
-  </div>
-  <div class="cell 9">
-  </div>
-  <div class="cell 10">
-  </div>
-  <div class="cell 11">
-  </div>
-  <div class="cell 12">
-  </div>
-  <div class="cell 13">
-  </div>
-  <div class="cell 14">
-  </div>
-  <div class="cell 15">
-  </div>
-  <div class="cell 16">
-  </div>
-  <div class="cell 17">
-  </div>
-
-</div>
-</div> -->
 <center>
   {{ moment().format('Do MMM YYYY') }}
   <br>
@@ -127,39 +9,39 @@
 </center>
 <br>
 <div class="wrapper">
-  <div class="time">
+  <!-- <div class="time">
     <br>
     <div class="time-slot">
-      8 - 9
+      <center>8 - 9</center>
     </div>
     <div  class="time-slot">
-      9 - 10
+      <center>9 - 10</center>
     </div>
     <div  class="time-slot">
-      10 - 11
+      <center>10 - 11</center>
     </div>
     <div  class="time-slot">
-      11 - 12
+      <center>11 - 12</center>
     </div>
     <div  class="time-slot">
-      12 - 1
+      <center>12 - 1</center>
     </div>
     <div class="time-slot">
-      1 - 2
+      <center>1 - 2</center>
     </div>
     <div  class="time-slot">
-      2 - 3
+      <center>2 - 3</center>
     </div>
     <div  class="time-slot">
-      3 - 4
+      <center>3 - 4</center>
     </div>
     <div  class="time-slot">
-      4 - 5
+      <center>4 - 5</center>
     </div>
     <div  class="time-slot">
-      5 - 6
+      <center>5 - 6</center>
     </div>
-  </div>
+  </div> -->
 
   <div class="day" v-for="(Day, key) in Days" :key="Day">
     <center> {{ key }} </center>
@@ -169,8 +51,6 @@
   </div>
 
 </div>
-
-
 
 
 
@@ -268,17 +148,20 @@ export default {
 <style scoped>
 
 .wrapper{
+    padding: 10px;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
 }
 
-.time-slot {
-  height: 1rem;
-  width: 3;
-  padding: 2px;
-  border: 0.21rem solid transparent;
+/* .time-slot {
+  
+  height: 20px;
+  width: 50px;
+  padding: 1px;
+  border: 0.21px solid transparent;
   margin: 0;
-}
+  
+} */
 /* .day {
   flex-basis: 30%;
   box-sizing: border-box;
