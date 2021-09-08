@@ -1,7 +1,7 @@
 <template>
-<div class="cell">
+<div class="cell" :class="classObject">
     <div class="time">
-        {{ time }} - {{ Number(time) + 1 }}
+        {{ Number(time) }} - {{ Number(time) + 1 }}
     </div>
     <div class="name">
         <center> {{ code }} {{ name }} </center>
@@ -19,6 +19,8 @@
 </template>
 
 <script>
+import moment from 'moment'
+
 export default {
   name: 'Cell',
   props: {
@@ -27,12 +29,35 @@ export default {
     code: String,
     teacher: String,
     room: String,
-    time: Number
-  }
+    time: Number,
+    day: String
+  },
+  methods: {
+    moment: function () {
+      return moment();
+    }
+  },
+  computed: {
+    classObject() {
+      return {
+        isNow: this.time == moment().format('H') && this.day == moment().format('ddd'),
+        isDay: this.day == moment().format('ddd')
+      }
+    }
+  },
 }
 </script>
 
 <style scoped>
+
+.isDay {
+  background: #323232;
+}
+
+.isNow {
+  background: #3B5249;
+}
+
 .cell {
   
   height: 50px;
