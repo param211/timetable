@@ -70,5 +70,6 @@ export default {
 
 .time {
   color: rgb(145, 145, 145);
+  font-size: small;
 }
 </style>

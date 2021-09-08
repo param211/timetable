@@ -17,5 +17,6 @@ export default {
 body{
   background: #212121;
   color: rgb(200, 200, 200);
+  font-family: Helvetica;
 }
 </style>
